@@ -14,8 +14,7 @@
 - `frontend/`：前端应用，负责需求采集、结果展示与课件预览
 - `backend/`：Node.js 服务端，封装与 Gemini API 的交互逻辑
 - `env.example`：根目录环境变量示例文件（汇总前后端所需变量）
-- `n8n.html`：演示用的静态幻灯片页面
-- `docs/`：项目方案与调研材料（默认被 `.gitignore` 忽略，可根据需要自行管理）
+
 
 ## 前置条件
 
@@ -28,8 +27,6 @@
 
 ```bash
 cp env.example .env            # 如果希望统一管理
-cp backend/env.example backend/.env
-cp frontend/env.example frontend/.env
 ```
 
 关键变量说明：
@@ -98,8 +95,7 @@ Vite 开发服务器通常运行在 `http://localhost:5173`，自动代理到后
 
 ## 后续规划
 
-- 接入真实的 Gemini 生成逻辑与重试策略，完善错误处理
-- 支持生成更多交互形式与多媒体资源
+- 优化大纲编辑功能
 - 加入用户身份管理、作品保存等功能
 - 优化课件导出体验，支持多格式输出
 
